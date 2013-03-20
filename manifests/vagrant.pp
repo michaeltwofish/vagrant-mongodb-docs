@@ -39,7 +39,7 @@ node default {
 	class { 'nginx': }
 	nginx::resource::vhost { 'mongodb-docs':
 		ensure   => present,
-		www_root => '/home/vagrant/mongodb-docs/build/master/html',
+		www_root => '/var/www/mongodb-docs/build/master/html',
 	}
 
 	user { 'vagrant':
